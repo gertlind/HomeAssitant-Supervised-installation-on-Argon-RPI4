@@ -11,6 +11,22 @@ sudo rpi-update
 sudo reboot
 sudo rpi-eeprom-update -d -a
 ```
+### Make below settings in raspi-config
+
+- raspi-config
+	- Advanced Options
+		- Bootloader Version
+			- [Boot ROM Version]
+				- [Latest Use the latest version boot ROM software]
+					- [Reset to Default] - [No]
+					- [Boot ROM not reset to defaults] - [Ok]
+			- Advanced Options
+				- [Boot Order]
+					- [USB Boot]
+						- [USB device is default boot device] - [Ok]
+		- [Finish]
+		- [Would you like to reboot now] - [Yes]
+
 ### Install git
 ```
 sudo apt-get install git
@@ -34,10 +50,10 @@ https://www.wundertech.net/how-to-install-hacs-on-home-assistant/<br>
 [https://github.com/billw2/rpi-clone](url)<br>
 ```
 git clone https://github.com/billw2/rpi-clone.git
-cd rpi-clone
-sudo cp rpi-clone rpi-clone-setup /usr/local/sbin
+sudo cp rpi-clone/rpi-clone rpi-clone/rpi-clone-setup /usr/local/sbin
 ```
-Clone the memory card to the SSD disk: ```sudo rpi-clone -f -p 240M sda```<br>
+Clone the memory card to the SSD disk:<br>
+ ```sudo rpi-clone -f -p 240M sda```<br>
 <i>This takes a while......</i><br>
 
 
