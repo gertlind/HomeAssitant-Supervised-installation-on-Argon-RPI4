@@ -33,9 +33,9 @@ https://www.wundertech.net/how-to-install-hacs-on-home-assistant/<br>
 ### Install rpi-clone
 [https://github.com/billw2/rpi-clone](url)<br>
 ```
-git clone https://github.com/billw2/rpi-clone.git<br>
-cd rpi-clone<br>
-sudo cp rpi-clone rpi-clone-setup /usr/local/sbin<br>
+git clone https://github.com/billw2/rpi-clone.git
+cd rpi-clone
+sudo cp rpi-clone rpi-clone-setup /usr/local/sbin
 ```
 Clone the memory card to the SSD disk: ```sudo rpi-clone -f -p 240M sda```<br>
 <i>This takes a while......</i><br>
